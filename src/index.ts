@@ -9,6 +9,7 @@ import {
 } from '@elizaos/core';
 import starterPlugin from './plugin.ts';
 import { initCharacter } from "./init/init.ts";
+import communityManagerPlugin from './plugins/communityManager';
 import { set } from 'zod';
 
 /**
@@ -286,22 +287,9 @@ const project: Project = {
 
 export default {
   project,
+  pllugins: [communityManagerPlugin],
   DatabaseAdapter: ["postgres"],
   settings: {
     POSTGRES_URL: process.env.POSTGRES_URL
   }
 };
-
-// export default {
-//   project,
-//   DatabaseAdapter: ["supabase"],
-//   settings: {
-//     SUPABASE_URL: process.env.SUPABASE_URL,
-//     SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY
-//   }
-//   // plugins: ["@elizaos-plugins/adapter-supabase"],
-//   // settings: {
-//   //   SUPABASE_URL: process.env.SUPABASE_URL,
-//   //   SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY,
-//   // }
-// };
