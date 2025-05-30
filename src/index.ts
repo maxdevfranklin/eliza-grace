@@ -287,7 +287,7 @@ const project: Project = {
 
 export default {
   project,
-  pllugins: [communityManagerPlugin],
+  // pllugins: [communityManagerPlugin],
   DatabaseAdapter: ["postgres"],
   settings: {
     POSTGRES_URL: process.env.POSTGRES_URL
