@@ -27,6 +27,7 @@
     "dist"
   ],
   "dependencies": {
+    "@elizaos/adapter-postgres": "^0.25.6-alpha.1",
     "@elizaos/cli": "beta",
     "@elizaos/core": "beta",
     "@elizaos/plugin-anthropic": "^1.0.0-beta.53",
